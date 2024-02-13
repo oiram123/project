@@ -10,8 +10,6 @@ COPY tsconfig.json ./tsconfig.json
 
 COPY jest.config.js .
 
-COPY src/__tests__ ./__tests__
-
 COPY . .
 
 RUN npm run build
