@@ -10,7 +10,7 @@ COPY tsconfig.json ./tsconfig.json
 
 COPY jest.config.js .
 
-COPY __tests__ ./__tests__  
+COPY src/__tests__ ./__tests__
 
 COPY . .
 
