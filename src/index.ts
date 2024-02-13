@@ -1,14 +1,18 @@
-import express, {Request, Response} from 'express';
-
+import express, { Request, Response } from "express";
+import { json } from "body-parser";
+import mainRoute from "./routes/mainRoute";
 const app = express();
-const port = 8000;
+const port = 5000;
 
-app.get('/', (req: Request, res: Response) => {
-    res.send("Hello world");
-})
+// For accepting post form data
+app.use(json());
+
+app.use("/main", mainRoute);
+
+app.get("/", (req: Request, res: Response) => {
+  res.send("Hello world 2");
+});
 
 app.listen(port, () => {
-    console.log("Server is running on port: ", port);
-})
-
-
+  console.log("Server is running on port: ", port);
+});
