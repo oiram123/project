@@ -1,0 +1,12 @@
+How the program will be executed to check the features numbers if they are plaindrom, prime or invalid numbers
+
+1. Loop through features numbers from the request body
+2. Creating an object to store all the informartion about the feature numbers
+3. The shape of array will be: prime, palindrom, invalidNumbers -> the reason is that if a number is prime true, to not check that number if it is palindrome but to go to the next number and vice versa for the palindrome numbers. In the invalidNumbers will be store all the numbers that are not prime or palindrome.
+4. Return the response of the invalid number else return the numbers on the request and the time of the exection.
+
+
+
+
+
+

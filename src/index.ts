@@ -10,7 +10,7 @@ app.use(json());
 app.use("/main", mainRoute);
 
 app.get("/", (req: Request, res: Response) => {
-  res.send("Hello world 2");
+  res.send("Hello world");
 });
 
 app.listen(port, () => {
