@@ -8,5 +8,5 @@ services:
     ports:
       - 5000:5000
     volumes:
-      - ./__tests__:usr/src/app/__tests__  
+      - ./src/__tests__:usr/src/app/__tests__  
       
