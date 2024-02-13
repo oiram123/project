@@ -8,5 +8,5 @@ services:
     ports:
       - 5000:5000
     volumes:
-      - ./src/__tests__:usr/src/app/__tests__  
+      - /home/mario/project/src/__tests__:/usr/src/app/__tests__ 
       
