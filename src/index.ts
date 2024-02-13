@@ -1,8 +1,20 @@
 import express, { Request, Response } from "express";
 import { json } from "body-parser";
 import mainRoute from "./routes/mainRoute";
+import helmet from "helmet";
+import hpp from "hpp";
+//@ts-ignore   
+import { xss } from "express-xss-sanitizer";
+import cors from "cors";
+
 const app = express();
 const port = 5000;
+
+//for security
+app.use(helmet());
+app.use(hpp());
+app.use(xss());
+app.use(cors());
 
 // For accepting post form data
 app.use(json());
